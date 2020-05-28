@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GoToLogActivity(View view) {
-        Intent toLog = new Internet(this, LogActivity.class);
+        Intent toLog = new Intent(this, LogActivity.class);
         startActivity(toLog);
     }
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMainActivity(View view) {
-        Intent toMainActivity = new Intent((String)Action_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
+        Intent toMainActivity = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
 
         startActivity(toMainActivity);
     }
