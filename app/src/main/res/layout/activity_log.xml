@@ -7,7 +7,7 @@
     tools:context=".LogActivity">
 
     <TextView
-        android:id="@+id/Log Title"
+        android:id="@+id/LogTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please log your temperature today"
