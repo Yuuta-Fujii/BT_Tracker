@@ -4,19 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6ED5E3"
     tools:context=".LogActivity">
 
     <TextView
         android:id="@+id/LogTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
         android:text="Please log your temperature today"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#5E0404"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.115" />
 
     <EditText
         android:id="@+id/LoginputDate"
@@ -32,9 +36,11 @@
 
     <Button
         android:id="@+id/LogSaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
         android:text="Save"
+        android:textColor="#4B7C11"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
