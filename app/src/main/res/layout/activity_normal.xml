@@ -4,18 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6EFB0"
     tools:context=".NormalActivity">
 
     <TextView
-        android:id="@+id/NormalTextView1"
+        android:id="@+id/normalTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Normal human body temperature is between 36.0-37.5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Normal Body Temperature"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E0080"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ScrollView
+        android:id="@+id/normalTextScroll"
+        android:layout_width="424dp"
+        android:layout_height="461dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalTitle"
+        app:layout_constraintVertical_bias="0.228">
+
+        <TextView
+            android:id="@+id/normalLongText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#feeafa"
+            android:padding="10dp"
+            android:text="@string/normalRangeText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK TO HOME"
+        android:onClick="normalToHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalTextScroll" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
