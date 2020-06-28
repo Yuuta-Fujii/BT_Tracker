@@ -28,10 +28,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
-        app:layout_constraintStart_toEndOf="@+id/titleimage" />
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/titleimage"
+        android:id="@+id/imageView"
         android:layout_width="66dp"
         android:layout_height="62dp"
         android:layout_marginStart="24dp"
