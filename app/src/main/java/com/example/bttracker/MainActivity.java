@@ -1,4 +1,5 @@
 package com.example.bttracker;
+
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
@@ -43,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMainActivity(View view) {
-        Intent toMainActivity = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
-
+        Intent toMainActivity = new Intent(this,MainActivity.class);
         startActivity(toMainActivity);
     }
 
@@ -88,5 +88,25 @@ public class MainActivity extends AppCompatActivity {
             // Create notification channel
             notificationManager.createNotificationChannel(channel);
         }
+    }
+
+    public void goToLink2(View view) {
+        Intent toLink2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
+        startActivity(toLink2);
+    }
+
+    public void goToLink3(View view) {
+        Intent toLink3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.terumo-taion.jp/health/temperature/06.html"));
+        startActivity(toLink3);
+    }
+
+    public void goToLink4(View view) {
+        Intent toLink4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nurse.fc2-rentalserver.com/temp3.html"));
+        startActivity(toLink4);
+    }
+
+    public void goToLink5(View view) {
+        Intent toLink5 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://lovetech-media.com/news/family/20200403_03/2/"));
+        startActivity(toLink5);
     }
 }

@@ -17,7 +17,6 @@ public class MechanismActivity extends AppCompatActivity {
 
     public void goToLink1(View view) {
         Intent toLink1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://science.howstuftworks.com/life/cellular-microscopic/question45.htm"));
-
         startActivity(toLink1);
     }
 }
