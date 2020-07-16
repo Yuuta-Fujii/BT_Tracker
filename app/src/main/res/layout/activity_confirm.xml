@@ -8,11 +8,12 @@
 
     <TextView
         android:id="@+id/showBTData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="46dp"
+        android:background="#89B6DA"
         android:text="BT Data"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
