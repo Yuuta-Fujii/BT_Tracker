@@ -142,4 +142,17 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.14" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="96dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setReminderButton"
+        app:layout_constraintVertical_bias="0.716"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
